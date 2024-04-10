@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 
 def run():
-    test_path = r"data\images\train\full"
+    test_path = r"data\images\test"
     epochs = 300
     batch_size = 128
     patience = 16
@@ -11,7 +11,7 @@ def run():
     name_test = "exp1test"
 
     # 8k dataset
-    model = YOLO("yolov9c.yaml")
+    model = YOLO("yolov9c.pt")
     model.train(data="config_8k.yaml", epochs=epochs, batch=batch_size, project="8k", name=name_train,
                 deterministic=True, seed=seed, profile=True, plots=True, patience=patience)
     model.export(format="onnx")

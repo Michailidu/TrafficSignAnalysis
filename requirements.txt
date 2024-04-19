@@ -1,2 +1,3 @@
 onnx==1.16.0
 ultralytics
+click

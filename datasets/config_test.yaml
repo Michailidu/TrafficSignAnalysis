@@ -1,6 +1,6 @@
 path: "data/"
-train: "images/8k/train/"
-val: "images/8k/val/"
+train: ""
+val: "images/test"
 
 nc: 76
 names: [

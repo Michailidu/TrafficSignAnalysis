@@ -1,10 +1,8 @@
-# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 path: "data/"
 train: "images/8k/train/"
 val: "images/8k/val/"
 
-# Classes
-nc: 76  # number of classes
+nc: 76
 names: [
   "regulatory--keep-right",
   "regulatory--height-limit",
@@ -82,4 +80,4 @@ names: [
   "warning--road-slope-right",
   "warning--traffic-merges-left",
   "information--hospital"
-]  # class names
+]
